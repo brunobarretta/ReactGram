@@ -1,23 +1,21 @@
 import './Photo.css'
 
 import { uploads } from '../../utils/config'
+import { Link } from "react-router-dom"
 
 //components
 import Message from "../../components/Message"
-import { Link } from "react-router-dom"
 import PhotoItem from '../../components/PhotoItem'
+import LikeContainer from '../../components/LikeContainer'
 
 // Hooks
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { useSelector, useDispatch } from 'react-redux'
-import { useParams } from "react-router-dom"
-import { getPhoto, like, comment } from '../../slices/photoSlice'
-import LikeContainer from '../../components/LikeContainer'
 import { useResetComponentMessage } from "../../hooks/useResetComponentMessage"
-
+import { useParams } from "react-router-dom"
 
 //Redux
-
+import { getPhoto, like, comment } from '../../slices/photoSlice'
 
 const Photo = () => {
 
@@ -59,7 +57,7 @@ const Photo = () => {
   if (loading) {
     return <p>Carregando...</p>
   }
-  console.log(photo)
+  
   return (
     <div id='photo'>
       <PhotoItem photo={photo} />

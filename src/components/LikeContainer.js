@@ -5,9 +5,6 @@ import {BsHeart, BsHeartFill} from 'react-icons/bs'
 
 const LikeContainer = ({photo, user, handleLike}) => {
 
-    console.log(photo)
-    console.log(user)
-
   return (
     <div className='like'>
         {photo.likes && user && (
