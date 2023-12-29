@@ -7,11 +7,11 @@ O ReactGram é um projeto desenvolvido durante o curso de React na Udemy. É uma
 
 ## Tecnologias Utilizadas
 
-- React
-- Redux
-- Express
-- MongoDB
-- Mongoose
+- [React](https://reactjs.org/): Biblioteca JavaScript para construção de interfaces de usuário.
+- [Redux](https://redux.js.org/): Gerenciador de estado para aplicativos JavaScript.
+- [Express](https://expressjs.com/): Framework web para Node.js.
+- [MongoDB](https://www.mongodb.com/): Banco de dados NoSQL.
+- [Mongoose](https://mongoosejs.com/): ODM (Object Document Mapper) para MongoDB e Node.js.
 
 ## Pré-requisitos
 
